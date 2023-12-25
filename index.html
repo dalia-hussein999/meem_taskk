@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;
+            500;600&family=Playfair+Display:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <!-- about section -->
+      <section class="about flex">
+        <div>
+          <h5>عن تجسير</h5>
+          <p class="about-pref">تحويل الأسر المنتجة إلي منشآت تجارية مستدامة</p>
+        </div>
+        <div class="about-text">
+          <i class="fa-solid fa-arrow-left-long"></i>
+          <p>
+            يهدف برنامج تجسير لإبتكار حلول مساعدة للأسرة المنتجة لتمكينها من
+            تحول أنشطتها إلي منشآت مستدامة وذلك يدعم حصولها علي الحلول التمويلية
+            ودعم مساهمتها في تنمية الاقتصاد المحلي وخلق فرص تسويقية للمشاريع
+            المميزة منها محليا ودوليا
+          </p>
+
+          <button>
+            عرض المزيد
+            <span class="btn-icon"
+              ><i class="fa-solid fa-arrow-left-long"></i
+            ></span>
+          </button>
+        </div>
+      </section>
+      <!-- video section -->
+      <section class="video">
+        <div class="container">
+          <figure>
+            <img src="images/banner.png" alt="bannerImage" />
+            <div class="overlay">
+              <div class="container-animation">
+                <div class="video-icon">
+                  <i class="fa-solid fa-play"></i>
+                </div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+              </div>
+            </div>
+          </figure>
+        </div>
+      </section>
+    </header>
+    <!-- steps section -->
+    <section class="steps">
+      <div class="container">
+        <p class="steps-title">جسر المستفيد</p>
+        <p class="steps-subtitle">
+          يعبر هذا النص العربي عن نص وهمي سيتم اضافة نص حقيقي قريبا
+        </p>
+        <hr />
+        <div class="steps-flex flex">
+          <div class="step active" onclick="handleItemClick(this)" id="step0">التسجيل</div>
+          <div class="step" onclick="handleItemClick(this)" id="step1" >القبول</div>
+          <div class="step" onclick="handleItemClick(this)" id="step2">التدريب</div>
+          <div class="step" onclick="handleItemClick(this)" id="step3">دراسة الجدوي</div>
+          <div class="step handle-badding" onclick="handleItemClick(this)" id="step4">دراسات الاستشارية</div>
+          <div class="step" onclick="handleItemClick(this)" id="step5">تمويل</div>
+          <div class="step" onclick="handleItemClick(this)" id="step6>تطوير الأعمال</div>
+          <div class="step" onclick="handleItemClick(this)" id="step7">تصدير</div>
+          
+        </div>
+        <div class="step-desc flex">
+          <div class="counter">0<span id="counter">1</span></div>
+          <p class="desc">
+            في هذه المرحلة نسعي لاستقطاب الأسر المنتجة ذو الكفاءة والرغبة
+            للانتقال الي مشاريع صغيرة مستدامة
+          </p>
+          <div class="shap flex">
+            <div class="light-color first"></div>
+            <div class="dark-color"></div>
+            <div class="dark-color"></div>
+            <div class="light-color"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- services section -->
+    <section class="services">
+      <div class="container">
+        <p class="services-title">خدماتنا</p>
+        <p class="services-subtitle">
+          يعبر هذا النص العربي عن نص وهمي سيتم اضافة نص حقيقي قريبا
+        </p>
+      </div>
+
+      <div id="services" class="flex">
+        <div class="services-item active-item">
+          <img src="images/img1.png" />
+          <div class="overlay blue-overlay overlay-active">
+            <h4>التدريب</h4>
+            <p>
+              برامج تدريبية وتأهيلية لتنمية المهارات التعريفية لأصحاب المشاريع
+              المتناهية الصغر.
+            </p>
+            <button>
+              عرض المزيد
+              <span class="btn-icon"
+                ><i class="fa-solid fa-arrow-left-long"></i
+              ></span>
+            </button>
+          </div>
+        </div>
+        <div class="services-item" >
+          <img src="images/img2.png" />
+          <div class="overlay green-overlay"></div>
+        </div>
+        <div class="services-item" >
+          <img src="images/img3.png" />
+          <div class="overlay blue-overlay"></div>
+        </div>
+        <div class="services-item" >
+          <img src="images/img4.png" />
+          <div class="overlay green-overlay"></div>
+        </div>
+        <div class="services-item" >
+          <img src="images/img5.png" />
+          <div class="overlay blue-overlay"></div>
+        </div>
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
